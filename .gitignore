@@ -4,6 +4,5 @@ tmp
 node_modules/*
 test/fixtures/**/dist
 coverage
-lib
 npm-debug.log
 *.lock
