@@ -17,9 +17,9 @@ export default function getWebpackCommonConfig(args) {
   const pkgPath = join(args.cwd, 'package.json');
   const pkg = existsSync(pkgPath) ? require(pkgPath) : {};
 
-  const jsFileName = args.hash ? '[name]-[chunkhash].js' : '[name].js';
-  const cssFileName = args.hash ? '[name]-[chunkhash].css' : '[name].css';
-  const commonName = args.hash ? 'common-[chunkhash].js' : 'common.js';
+  const jsFileName = args.hash ? '[name]-[chunkhash:8].js' : '[name].js';
+  const cssFileName = args.hash ? '[name]-[chunkhash:8].css' : '[name].css';
+  const commonName = args.hash ? 'common-[chunkhash:8].js' : 'common.js';
 
   const silent = args.silent === true;
   const babelQuery = getBabelCommonConfig();
