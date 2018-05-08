@@ -40,11 +40,13 @@ function getWebpackConfig(args, cache) {
         quote_keys: true
       },
       mangle: {
-        screw_ie8: false
+        screw_ie8: false,
+        keep_fnames: true
       },
       compress: {
         warnings: false,
         properties: false,
+        keep_fnames: true
       },
       sourceMap: false
     };
