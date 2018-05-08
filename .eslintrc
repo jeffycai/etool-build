@@ -1,0 +1,14 @@
+{
+  "extends": "eslint-config-airbnb/base",
+  "parser": "babel-eslint",
+  "rules": {
+    "no-console": [0],
+    "space-before-function-paren": [2, "never"],
+    "max-len": [2, 120, 2],
+    "global-require": [0],
+    "import/no-dynamic-require": [0]
+  },
+  "ecmaFeatures": {
+    "experimentalObjectRestSpread": true
+  }
+}
