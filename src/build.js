@@ -36,7 +36,7 @@ function getWebpackConfig(args, cache) {
     webpackConfig.UglifyJsPluginConfig = {
       output: {
         ascii_only: true,
-        beautify: true,
+        beautify: false,
         quote_keys: true
       },
       mangle: {
